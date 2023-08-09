@@ -13,6 +13,7 @@
     font-weight: bold;
     background-color: #333333;
     border: 3px solid #333333;
+    cursor: pointer;
 }
 #cover
 {
