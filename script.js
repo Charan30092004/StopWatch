@@ -69,30 +69,29 @@ start.addEventListener("click",() =>{
     }
 })
 
-stop.addEventListener("click",() =>{
+stop.addEventListener("click", () => {
+  if (!paused) {
+    paused = true;
+    start.disabled = false;
+    endtime = new Date();
+    start.innerHTML = "Resume";
+  }
+});
 
-    if( ! paused)
-    {
-        paused=true;
-        start.disabled=false;
-        endtime=new Date();
-    }
-})
+reset.addEventListener("click", () => {
+  start.disabled = false;
+  start.innerHTML = "Start";
+  starttime = 0;
+  currenttime = 0;
+  paused = true;
+  escapetime = 0;
+  totalrest = 0;
+  endtime = 0;
+  resttime = 0;
+  test = 0;
 
-reset.addEventListener("click",()=>{
-    start.disabled=false;
-    starttime = 0;
-    currenttime=0;
-    paused=true;
-    escapetime=0;
-    totalrest=0;
-    endtime=0;
-    resttime=0;
-    test=0;
-
-    hr=0;
-    min=0;
-    sec=0;
-    time.textContent="00:00:00";
-
-})
+  hr = 0;
+  min = 0;
+  sec = 0;
+  time.textContent = "00:00:00";
+});
