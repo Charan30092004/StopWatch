@@ -1,0 +1,68 @@
+:root
+{
+    font-family:consolas, monospace ;
+}
+.buttons
+{
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    background-color: #333333;
+    border: 3px solid #333333;
+}
+#cover
+{
+    border: 2px solid gray;
+    width: max-content;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: gray;
+    margin: 150px auto;
+
+}
+h1{
+    padding-left: 70px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
+}
+.buttons:hover
+{
+    color: #37ed13;
+    background-color: white;
+    border-color: #37ed13;
+}
+.buttons:active
+{
+    background-color: blue;
+}
+
+#container
+{
+    /* background-color: gray; */
+    border: 2px solid;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 25px;
+    align-items: center;
+}
+
+body
+{
+    background: url(./image/snow.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#timer
+{
+    font-size: 70px;
+    color:#37ed13;   
+}
